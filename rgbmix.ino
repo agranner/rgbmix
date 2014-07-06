@@ -70,8 +70,23 @@ void loop()
     #endif
   }
   
+  // Light the LED
   analogWrite(redLEDPin, red);
   analogWrite(greenLEDPin, green);
   analogWrite(blueLEDPin, blue);  
   delay(10);
 }
+
+/*
+void readButtons()
+{
+  //capture button press
+  //process color counter
+  //meter()
+}
+
+void meter()
+{
+  // Print R level G level B level
+}
+*/
