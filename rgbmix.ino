@@ -86,17 +86,21 @@ void readButtons()
 }
 */
 
-/*
+
 void meter()
 {
+  // Convert/Invert levels 
+  int r = map(red, 0, 255, 9, 0);
+  int g = map(green, 0, 255, 9, 0);
+  int b = map(blue, 0, 255, 9, 0);
   // Print R level G level B level
   Serial.print("R: ");
-  Serial.print(red);
-  Serial.print(/t);
+  Serial.print(r);
+  Serial.print("\t");
   Serial.print("G: ");
-  Serial.print(green);
-  Serial.print(/t);
+  Serial.print(g);
+  Serial.print("\t");
   Serial.print("B: ");
-  Serial.println(blue);
+  Serial.println(b);
 }
-*/
+
