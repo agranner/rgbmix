@@ -84,9 +84,19 @@ void readButtons()
   //process color counter
   //meter()
 }
+*/
 
+/*
 void meter()
 {
   // Print R level G level B level
+  Serial.print("R: ");
+  Serial.print(red);
+  Serial.print(/t);
+  Serial.print("G: ");
+  Serial.print(green);
+  Serial.print(/t);
+  Serial.print("B: ");
+  Serial.println(blue);
 }
 */
