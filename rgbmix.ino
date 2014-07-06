@@ -14,8 +14,8 @@ int red = 255;
 int blue = 255;
 int green = 255;
 
-#define COMMON_ANODE
 #define DEBUG
+
 void setup()
 {
   pinMode(redLEDPin, OUTPUT);
@@ -32,6 +32,7 @@ void setup()
 
 void loop()
 {
+  // Read Buttons
   if (digitalRead(redSwitchPin) == LOW)
   {
     red --;
@@ -68,11 +69,7 @@ void loop()
     Serial.println(blue);
     #endif
   }
-  /*#ifdef COMMON_ANODE
-    red = 255 - red;
-    green = 255 - green;
-    blue = 255 - blue;
-  #endif */
+  
   analogWrite(redLEDPin, red);
   analogWrite(greenLEDPin, green);
   analogWrite(blueLEDPin, blue);  
